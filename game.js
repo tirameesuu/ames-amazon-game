@@ -1088,14 +1088,6 @@ function updateGame() {
 	// Clear any existing choices
 	const choicesDiv = document.getElementById("choices");
 	choicesDiv.innerHTML = "";
-
-	// Set up the reset button event (if needed)
-	const resetButton = document.getElementById("reset");
-	resetButton.addEventListener("click", () => {
-			currentNode = "start";
-			updateGame();
-			saveGame();
-	});
 	
 	// Create and add new choice buttons with a fade-out transition on click
 	node.choices.forEach(choice => {
