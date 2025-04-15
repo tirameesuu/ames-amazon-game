@@ -9,14 +9,17 @@
     <body>
         <!-- Start Page (shown on page load) -->
         <div id="start-page">
-            <h1>Amazon Rainforest Survival</h1>
-            <button id="play-button" class="choice-btn">Play</button>
+            <div id="start-container">
+                <h1>Can You Survive The Amazon?</h1>
+                <img id="start-gif" src="assets/start.gif" alt="start">
+                <button id="play-button" class="choice-btn">Play</button>
+            </div>
         </div>
 
         <!-- Game Container (hidden until Play is clicked) -->
-        <div id="game-container" class="game-container" style="display: none; text-align: center;">
+        <div id="game-container" class="game-container">
+            <button id="reset" class="reset">&larr; Back to Start</button>
             <p id="story-text" class="story-text">You wake up disoriented in the Amazon rainforest and must decide which way to go.</p>
-            <button id="reset" class="reset">Back to Start</button>
             
             <div id="choices" class="choices">
                 <!-- Choices will be inserted here by JavaScript -->
@@ -24,10 +27,12 @@
         </div>
 
         <!-- Results Page (hidden until a result is reached) -->
-        <div id="results-page" style="display: none; text-align: center;">
-            <h2>Results</h2>
-            <p id="results-text"></p>
-            <button id="play-again-button" class="choice-btn">Play Again</button>
+        <div id="results-page">
+            <div id="results-container">
+                <h2>Results</h2>
+                <div id="results-image"></div>
+                <button id="play-again-button" class="choice-btn">Play Again</button>
+            </div>
         </div>
 
         <footer>
