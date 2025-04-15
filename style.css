@@ -1,5 +1,5 @@
 body, button {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 
 body {
@@ -72,22 +72,6 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #666;
-}
-
-.reset {
-    margin-bottom: 10px;
-    padding: 12px 20px;
-    display: block;
-    background-color: transparent;
-    color: blue;
-    font-weight: bold;
-    border: 0px;
-    font-size: 15px;
-}
-
-.reset:hover {
-    color: rgb(0, 0, 160);
-    font-size: medium;
 }
 
 #start-page, #results-page {
